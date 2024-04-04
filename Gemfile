@@ -7,11 +7,11 @@ group :development do
 end
 
 group :development, :test, :rails3 do
-  gem "rack"
+  gem "rack", ">= 2.2.8.1"
   gem "ruby-debug"
   gem "rspec"
-  gem "rack-cache"
-  gem "merb", "1.1.0"
+  gem "rack-cache", ">= 0.5.3"
+  gem "merb", "1.1.1"
   gem "i18n"
   gem "methopara" if RUBY_VERSION.match /1\.9/
 end
@@ -19,11 +19,11 @@ end
 if ENV["REDIS_STORE_ENV"] == "rails3"
   group :rails3 do
     gem "activesupport", "3.0.0.beta4"
-    gem "actionpack", "3.0.0.beta4"
+    gem "actionpack", "7.0.8.1"
   end
 else
   group :test do
     gem "activesupport", "2.3.8"
-    gem "actionpack", "2.3.8"
+    gem "actionpack", "7.0.8.1"
   end
 end
