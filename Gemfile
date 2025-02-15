@@ -7,7 +7,7 @@ group :development do
 end
 
 group :development, :test, :rails3 do
-  gem "rack"
+  gem "rack", ">= 2.2.11"
   gem "ruby-debug"
   gem "rspec"
   gem "rack-cache"
