@@ -7,11 +7,11 @@ group :development do
 end
 
 group :development, :test, :rails3 do
-  gem "rack"
+  gem "rack", ">= 2.2.13"
   gem "ruby-debug"
   gem "rspec"
   gem "rack-cache"
-  gem "merb", "1.1.0"
+  gem "merb", "1.1.1"
   gem "i18n"
   gem "methopara" if RUBY_VERSION.match /1\.9/
 end
